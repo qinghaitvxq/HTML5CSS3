@@ -1,0 +1,21 @@
+const path=require('path');
+module.exports={
+    entry:'./js/index.js',
+    output:{
+        path:path.resolve(__dirname,'dist'),
+        filename:'bundle.js'
+    },
+   devServer:{
+       contentBase:path.resolve(__dirname,'dist'),
+       open:true
+   },
+   module:{
+     rules:[
+         {
+             test:/\.css/,
+             exclude:/node_modules/,
+             use:['style-loader','css-loader']
+         }
+     ]
+   }
+}
