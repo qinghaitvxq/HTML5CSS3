@@ -23,3 +23,21 @@
     height:100vh;
     background-color:yellow;
 }
+
+.box{
+    display:inline-block;
+    background:pink;
+    height:100px;
+    width:100px;
+    position:relative;
+    animation:myframes 2s ease-in-out 0s infinite
+
+}
+/*@keyframes myframes {*/
+    /*from{*/
+        /*height:100px;*/
+    /*}*/
+    /*to{*/
+        /*height:300px;*/
+    /*}*/
+/*}*/
