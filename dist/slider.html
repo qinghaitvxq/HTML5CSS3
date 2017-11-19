@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div class="slides">
+      <ul class="img-ct">
+          <li><a href="#"><img src="http://h.hiphotos.baidu.com/zhidao/wh%3D450%2C600/sign=65d49821a70f4bfb8c859650367f54c6/cdbf6c81800a19d85be873bb30fa828ba71e46a1.jpg"  width="310" height="206" alt=""></a></li>
+          <li><a href="#"><img src="http://e.hiphotos.baidu.com/zhidao/pic/item/ac345982b2b7d0a2284d772bcdef76094a369afb.jpg"  width="310" height="206" alt=""></a></li>
+          <li><a href="#"><img src="http://b.hiphotos.baidu.com/zhidao/pic/item/a5c27d1ed21b0ef47a3cc0a7dbc451da80cb3e76.jpg"  width="310" height="206" alt=""></a></li>
+          <li><a href="#"><img src="http://b.hiphotos.baidu.com/zhidao/pic/item/0b55b319ebc4b745621a54e5c9fc1e178b8215b2.jpg"  width="310" height="206" alt=""></a></li>
+      </ul>
+  </div>
+  <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+  <script src="../bundle.js"></script>
+  <script>
+      var i=0;
+      setTimeout(function step() {
+          i++;
+          $('ul').animate({
+              left:i*(-310)
+          },1000);
+
+          if(i>=3){
+
+          }else{
+              setTimeout(step,1000);
+          }
+      });
+  </script>
+</body>
+</html>
